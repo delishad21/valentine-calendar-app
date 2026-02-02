@@ -65,12 +65,12 @@ const levelClass = computed(() => ({
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  max-width: 900px;
+  max-width: 1200px;
   background: rgba(0, 0, 0, 0.92);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: 20px;
+  padding: 40px;
   font-family: 'Courier New', monospace;
   color: #00ff00;
   z-index: 100;
@@ -106,18 +106,18 @@ const levelClass = computed(() => ({
 .debug-header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .debug-icon {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .debug-title {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -129,10 +129,10 @@ const levelClass = computed(() => ({
 
 .debug-message {
   display: flex;
-  gap: 8px;
-  margin: 6px 0;
-  font-size: 13px;
-  line-height: 1.5;
+  gap: 12px;
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.6;
   opacity: 0;
   animation: debug-line-appear 0.3s ease forwards;
 }

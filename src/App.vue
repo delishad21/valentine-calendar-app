@@ -195,7 +195,7 @@ const currentYesText = computed(() => {
 
 const currentNoText = computed(() => {
   if (appState.value === 'final_ask') return appText.finalAsk.noButton
-  if (noCount.value === 3) return "I'm sorry..."
+  if (noCount.value === 3) return "NO!"
   if (noCount.value >= 1) return "Still no"
   return appText.ask.noButton
 })
@@ -333,11 +333,14 @@ function handleRewindConfirm() {
     // Don't change state yet - this prevents calendar from updating with new events
   }, 300)
 
-  // After reassembly animation completes, THEN change state to final_ask
+  // After reassembly animation completes, reset to the beginning (ask state)
   setTimeout(() => {
     calendarReassembling.value = false
-    appState.value = 'final_ask'
+    // Reset to beginning of state machine
+    noCount.value = 0
+    appState.value = 'ask'
     showingDebug.value = false
+    breakingEvents.value.clear()
   }, 2600)
 }
 // Watch for rewind state to trigger animations

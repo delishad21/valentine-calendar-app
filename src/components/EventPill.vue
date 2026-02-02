@@ -48,7 +48,7 @@ const pillStyle = computed(() => ({
   padding: 6px 12px;
   border-radius: 12px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
   border-style: solid;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
