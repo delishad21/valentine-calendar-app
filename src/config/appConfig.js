@@ -4,35 +4,33 @@
 // Edit this file to customize your calendar entries!
 
 export const calendarConfig = {
-  // Month to display (0 = January, 1 = February, etc.)
   month: 1, // February
-
-  // Year to display
   year: 2026,
 
-  // Events for the calendar (day is 1-based: 1 = 1st of the month)
   events: [
     // Week 1
-    { day: 3, label: "Coffee Date", icon: "☕", color: "#FFB6C1" },
-    { day: 5, label: "Movie Night", icon: "🎬", color: "#DDA0DD" },
+    { day: 4, label: "loklok", icon: "🍢", color: "#FF69B4" }, // Wednesday
+    { day: 7, label: "Stay", icon: "🛋️", color: "#DDA0DD" }, // Saturday
+    { day: 8, label: "Terraria", icon: "🎮", color: "#FFB6C1" }, // Sunday
 
     // Week 2
-    { day: 11, label: "Dinner Plans", icon: "🍜", color: "#FF69B4" },
-    { day: 14, label: "Us 💗", icon: "💗", color: "#FF1493", special: true }, // Valentine's Day - special!
+    { day: 11, label: "steak", icon: "🥩", color: "#FF69B4" }, // Wednesday
+    { day: 14, label: "Us 💗", icon: "💗", color: "#FF1493", special: true }, // Saturday Valentine's Day - special!
+    { day: 15, label: "Chill", icon: "😌", color: "#FFB6C1" }, // Sunday
 
     // Week 3
-    { day: 18, label: "Lunch Together", icon: "🥗", color: "#FFB6C1" },
-    { day: 21, label: "Hangout", icon: "🛋️", color: "#DDA0DD" },
+    { day: 18, label: "bingchilling", icon: "🍨", color: "#FF69B4" }, // Wednesday
+    { day: 21, label: "Walk", icon: "🚶", color: "#DDA0DD" }, // Saturday
+    { day: 22, label: "luohanguo", icon: "🍇", color: "#FFB6C1" }, // Sunday
 
     // Week 4
-    { day: 25, label: "Game Night", icon: "🎮", color: "#BA55D3" },
-    { day: 28, label: "Brunch Date", icon: "🥞", color: "#FFB6C1" },
+    { day: 25, label: "pasta", icon: "🍝", color: "#FF69B4" }, // Wednesday
+    { day: 28, label: "ween birthday", icon: "☁️", color: "#DDA0DD" }, // Saturday
   ],
 
-  // The "special" event that toys will attach to initially
-  // This should match the day of one of your events marked as special: true
-  specialEventDay: 14, // Valentine's Day - where toys start
+  specialEventDay: 14,
 }
+
 
 // ============================================
 // TOY ASSET CONFIGURATION
