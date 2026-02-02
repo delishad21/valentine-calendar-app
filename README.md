@@ -4,7 +4,8 @@ A web app that asks "Will you be my Valentine?".
 
 Selecting "no" causes calendar events to disappear and stickers to change expressions. Shows debug overlay with warnings. Selecting "yes" shows a celebration screen.
 
-## features
+
+## Features
 
 - **Full month calendar** with customizable events
 - **Cute stickers** that react to user choices (4 expressions each)
@@ -12,6 +13,8 @@ Selecting "no" causes calendar events to disappear and stickers to change expres
 - **Rewind animation** to restore everything
 - **Celebration screen** with confetti when they say "yes"
 - **Fully responsive** design
+
+https://github.com/user-attachments/assets/5f693662-ffe9-4310-aa33-5f33a4524c65
 
 ## Quick Start
 
