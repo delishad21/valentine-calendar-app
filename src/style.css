@@ -1,0 +1,57 @@
+/* Global styles */
+:root {
+  --primary: #FF1493;
+  --primary-light: #FF69B4;
+  --primary-lighter: #FFB6C1;
+  --secondary: #DDA0DD;
+  --background: #fef3f8;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Smooth transitions for state changes */
+* {
+  transition-property: background-color, color, opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-lighter);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
+
+/* Selection color */
+::selection {
+  background: var(--primary-lighter);
+  color: white;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
